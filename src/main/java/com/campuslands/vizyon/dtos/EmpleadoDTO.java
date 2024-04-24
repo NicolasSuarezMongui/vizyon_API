@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class EmpleadoDTO {
     
-    @JsonView(EmpleadoDTO.class)
+    
     private Long id;
 
     @JsonView(EmpleadoDTO.class)
@@ -25,10 +25,10 @@ public class EmpleadoDTO {
     @JsonView(EmpleadoDTO.class)
     private String municipioNombre;
 
-    @JsonView(EmpleadoDTO.class)
+    
     private Integer cantidad;
 
-    @JsonView(EmpleadoDTO.class)
+    
     private int cantidadVentas;
 
 

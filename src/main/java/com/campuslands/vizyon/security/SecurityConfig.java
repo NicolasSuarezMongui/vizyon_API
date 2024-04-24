@@ -33,7 +33,7 @@ public class SecurityConfig {
         http.sessionManagement(sess -> sess.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
         http.authorizeHttpRequests(auth -> auth
                     .requestMatchers("/orden/**").hasAnyRole("USER", "ADMIN")
-                    .requestMatchers("/venta/**").hasRole("ADMIN")
+                    .requestMatchers("/venta/**","/proveedor/**").hasRole("ADMIN")
                     .requestMatchers("/authenticate/**", "/register").permitAll()
                     .requestMatchers(SWAGGER_WHILELIST).permitAll()
                     .anyRequest().permitAll())

@@ -17,12 +17,10 @@ public class VentaDTO {
     @JsonView(VentaDTO.class)
     private Long id;
 
-    @JsonView(VentaDTO.class)
     @JsonFormat(pattern = "yyyy-MM-dd")
     private Date fecha;
 
     private Long idEmpleado;
-    @JsonView(VentaDTO.class)
     private String empleadoNombre;
 
     private Long idCliente;
